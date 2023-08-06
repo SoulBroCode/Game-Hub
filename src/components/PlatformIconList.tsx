@@ -4,7 +4,6 @@ import {
   FaXbox,
   FaApple,
   FaLinux,
-  FaAnchor,
   FaAndroid,
 } from "react-icons/fa";
 import { MdPhoneIphone } from "react-icons/md";
@@ -35,7 +34,11 @@ const PlatformIconList = ({ platforms }: Props) => {
     <>
       <HStack marginY={1}>
         {platforms.map((platform) => (
-          <Icon as={iconMap[platform.slug]} color="gray.500"></Icon>
+          <Icon
+            key={platform.id}
+            as={iconMap[platform.slug]}
+            color="gray.500"
+          ></Icon>
         ))}
       </HStack>
     </>
