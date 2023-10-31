@@ -15,7 +15,7 @@ const usePlatforms = () => {
     queryKey: ["platforms"],
     queryFn: apiClient.getAll,
     staleTime: 24 * 60 * 60 * 1000, // 24
-    initialData: { count: platforms.length, next: null, results: platforms },
+    initialData: platforms,
   });
 }; //useData<Platform>("/platforms/lists/parents");
 
