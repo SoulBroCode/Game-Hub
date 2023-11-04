@@ -7,7 +7,7 @@ import {
 import ms from "ms";
 import useGameQueryStore from "../store";
 import gameService from "../services/gameService";
-import { Game } from "../entities/Game";
+import Game from "../entities/Game";
 
 const apiClient = gameService;
 
