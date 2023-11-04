@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
-import { Heading, Spinner, Text } from "@chakra-ui/react";
+import { Heading, Spinner } from "@chakra-ui/react";
 import useGame from "../hooks/useGame";
+import ExpandableText from "../components/ExpandableText";
 
 //const apiClient = new APIClient<GameDetail>("/games");
 
@@ -15,7 +16,7 @@ const GameDetailPage = () => {
   return (
     <>
       <Heading>{game?.slug}</Heading>
-      <Text>{game?.description_raw}</Text>
+      <ExpandableText>{game?.description_raw}</ExpandableText>
     </>
   );
 };
