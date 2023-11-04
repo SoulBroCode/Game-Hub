@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Heading, Spinner } from "@chakra-ui/react";
+import { GridItem, Heading, SimpleGrid, Spinner } from "@chakra-ui/react";
 import useGame from "../hooks/useGame";
 import ExpandableText from "../components/ExpandableText";
 import GameAttributes from "../components/GameAttributes";
@@ -15,13 +15,17 @@ const GameDetailPage = () => {
   if (error || !game) throw error; //error or game is undefined
 
   return (
-    <>
-      <Heading>{game?.slug}</Heading>
-      <ExpandableText>{game?.description_raw}</ExpandableText>
-      <GameAttributes game={game}></GameAttributes>
-      <GameTrailer gameId={game.id} />
-      <Screenshots gameId={game.id} />
-    </>
+    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
+      <GridItem>
+        <Heading>{game?.slug}</Heading>
+        <ExpandableText>{game?.description_raw}</ExpandableText>
+        <GameAttributes game={game}></GameAttributes>
+      </GridItem>
+      <GridItem>
+        <GameTrailer gameId={game.id} />
+        <Screenshots gameId={game.id} />
+      </GridItem>
+    </SimpleGrid>
   );
 };
 
