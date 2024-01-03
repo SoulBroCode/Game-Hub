@@ -5,24 +5,24 @@ Scaleable game discovery application using React.
 ------------------------------------------------------------------------------------------------------------
 
 Builded with
--javascript
--vite
--react
--typescript
+<br>-javascript
+<br>-vite
+<br>-react
+<br>-typescript
 
 ------------------------------------------------------------------------------------------------------------
 
 Using (libs)
--chakra
--emotion
--react query
--axios
--framer motion
--ms
--zustand
--react router
--react icons
--react infinte scroll component
+<br>-chakra
+<br>-emotion
+<br>-react query
+<br>-axios
+<br>-framer motion
+<br>-ms
+<br>-zustand
+<br>-react router
+<br>-react icons
+<br>-react infinte scroll component
 
 ------------------------------------------------------------------------------------------------------------
 
